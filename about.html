@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | KeeKTechie</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0e6a01a.js" crossorigin="anonymous"></script>
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .dark body {
+      background-color: #121212;
+      color: #f1f1f1;
+    }
+    .dark header {
+      background-color: #1f1f1f;
+    }
+    .dark section {
+      background-color: #1a1a1a;
+    }
+    .social-icon:hover {
+      transform: scale(1.2);
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 font-sans transition-colors duration-500">
+
+  <!-- Header -->
+  <header class="flex justify-between items-center px-6 py-4 shadow-md bg-white sticky top-0 z-50 transition-colors duration-500">
+    <h1 class="text-2xl font-bold text-blue-600">KeeKTechie</h1>
+    <div class="flex items-center space-x-4">
+      <nav class="space-x-4 hidden md:block">
+        <a href="index.html" class="hover:text-blue-500 font-medium">Home</a>
+        <a href="about.html" class="text-blue-600 font-medium border-b-2 border-blue-600">About</a>
+        <a href="index.html#services" class="hover:text-blue-500 font-medium">Services</a>
+        <a href="index.html#contact" class="hover:text-blue-500 font-medium">Contact</a>
+      </nav>
+      <!-- Dark Mode Toggle Button -->
+      <button id="theme-toggle" class="text-2xl focus:outline-none">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 bg-gradient-to-br from-blue-50 to-blue-100" data-aos="fade-in">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-blue-700 mb-4">About KeeKTechie</h2>
+    <p class="text-lg md:text-xl text-gray-700">Empowering Innovation. Enabling Transformation.</p>
+  </section>
+
+  <!-- Mission, Vision, Values -->
+  <section class="py-16 px-6 max-w-5xl mx-auto space-y-10">
+    <div data-aos="fade-up">
+      <h3 class="text-3xl font-bold text-blue-600 mb-2">Our Mission</h3>
+      <p class="text-gray-700">To empower businesses and individuals through cutting-edge Tech & IT solutions, professional Forex trading strategies, and transformative digital training programs.</p>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="100">
+      <h3 class="text-3xl font-bold text-green-600 mb-2">Our Vision</h3>
+      <p class="text-gray-700">To become a global leader in technology innovation and digital empowerment, inspiring growth and excellence across industries.</p>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="200">
+      <h3 class="text-3xl font-bold text-purple-600 mb-2">Core Values</h3>
+      <ul class="list-disc pl-6 text-gray-700">
+        <li>Innovation & Creativity</li>
+        <li>Integrity & Transparency</li>
+        <li>Customer-Centric Solutions</li>
+        <li>Excellence in Training</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Team Section (Optional) -->
+  <section class="py-16 bg-gray-50" data-aos="fade-up">
+    <div class="text-center mb-10">
+      <h3 class="text-3xl font-bold text-blue-700">Meet Our Team</h3>
+      <p class="text-gray-600">Our passionate team is dedicated to delivering excellence.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <!-- Team Member -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <img src="https://via.placeholder.com/150" alt="Team Member" class="rounded-full mx-auto mb-4">
+        <h4 class="text-xl font-semibold">John Doe</h4>
+        <p class="text-gray-500">CEO & Founder</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <img src="https://via.placeholder.com/150" alt="Team Member" class="rounded-full mx-auto mb-4">
+        <h4 class="text-xl font-semibold">Jane Smith</h4>
+        <p class="text-gray-500">CTO</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <img src="https://via.placeholder.com/150" alt="Team Member" class="rounded-full mx-auto mb-4">
+        <h4 class="text-xl font-semibold">Michael Lee</h4>
+        <p class="text-gray-500">Lead Developer</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 px-6 bg-gray-900 text-white text-center" data-aos="fade-up">
+    <p class="mb-4 text-lg font-medium">Connect with Us</p>
+    <div class="flex justify-center space-x-6 text-xl mb-4">
+      <a href="https://github.com/yourgithub" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+      <a href="https://twitter.com/yourtwitter" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+      <a href="https://linktr.ee/yourlinktree" target="_blank" class="social-icon"><i class="fas fa-link"></i></a>
+    </div>
+    <p class="text-sm">&copy; 2025 KeeKTechie. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+
+    const toggleButton = document.getElementById('theme-toggle');
+    const body = document.body;
+    const icon = toggleButton.querySelector('i');
+
+    // Load saved theme
+    if (localStorage.getItem('theme') === 'dark') {
+      body.classList.add('dark');
+      icon.classList.replace('fa-moon', 'fa-sun');
+    }
+
+    // Toggle theme
+    toggleButton.addEventListener('click', () => {
+      body.classList.toggle('dark');
+      if (body.classList.contains('dark')) {
+        icon.classList.replace('fa-moon', 'fa-sun');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        icon.classList.replace('fa-sun', 'fa-moon');
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  </script>
+
+</body>
+</html>
